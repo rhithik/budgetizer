@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budgetizer | The User Friendly Budget Tracker</title>
+    <link rel="stylesheet" href="/tailwind.css" />
+  </head>
+  <body>
+    <nav class="bg-green-800">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between">
+          <!-- logo -->
+          <div>
+            <a
+              href="#"
+              class="
+                flex
+                items-center
+                py-3
+                px-2
+                text-yellow-300
+                hover:text-yellow-500
+                focus:bg-green-600
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 mr-1"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span>budgetizer</span>
+            </a>
+          </div>
+
+          <!-- main navigation -->
+          <div class="hidden md:flex items-center space-x-1">
+            <a
+              href="./home.html"
+              class="
+                py-5
+                px-3
+                text-yellow-300
+                hover:text-yellow-500
+                focus:bg-green-600
+              "
+              >home</a
+            >
+            <a
+              href="#"
+              class="
+                py-5
+                px-3
+                text-yellow-300
+                hover:text-yellow-500
+                focus:bg-green-600
+              "
+              >budgets</a
+            >
+            <a
+              href="#"
+              class="
+                py-5
+                px-3
+                text-yellow-300
+                hover:text-yellow-500
+                focus:bg-green-600
+              "
+              >about</a
+            >
+            <a
+              href="#"
+              class="
+                py-5
+                px-3
+                text-yellow-300
+                hover:text-yellow-500
+                focus:bg-green-600
+              "
+              >contact</a
+            >
+          </div>
+
+          <!-- mobile navigation button-->
+          <div
+            class="
+              md:hidden
+              py-5
+              px-3
+              flex
+              item-center
+              text-yellow-300
+              hover:text-yellow-500
+            "
+          >
+            <button class="mobile-nav-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- mobile navigation  -->
+      <div
+        class="
+          mobile-nav
+          hidden
+          md:hidden
+          flex flex-col
+          text-center
+          bg-green-700
+        "
+      >
+        <a href="#" class="py-5 px-3 text-yellow-300 hover:text-yellow-500"
+          >home</a
+        >
+        <a href="#" class="py-5 px-3 text-yellow-300 hover:text-yellow-500"
+          >budgets</a
+        >
+        <a href="#" class="py-5 px-3 text-yellow-300 hover:text-yellow-500"
+          >about</a
+        >
+        <a href="#" class="py-5 px-3 text-yellow-300 hover:text-yellow-500"
+          >contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- content goes here -->
+
+    <div class="flex justify-center mx-auto">
+      <div class="flex flex-col max-w-6xl space-x-4 space-y-4">
+        <h1
+          class="
+            text-2xl
+            pt-8
+            text-green-800
+            group
+            relative
+            w-full
+            flex
+            justify-center
+          "
+        >
+          Budgets
+          <span class="absolute right-12 flex items-center pb-4">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 hover:text-green-500 focus:text-green-500"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </span>
+        </h1>
+        <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div
+            class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8"
+          >
+            <div
+              class="
+                shadow
+                overflow-hidden
+                border-b border-gray-200
+                sm:rounded-lg
+              "
+            >
+              <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50">
+                  <tr>
+                    <th
+                      scope="col"
+                      class="
+                        px-6
+                        py-3
+                        text-left text-xs
+                        font-medium
+                        text-gray-500
+                        uppercase
+                        tracking-wider
+                      "
+                    >
+                      month
+                    </th>
+                    <th
+                      scope="col"
+                      class="
+                        px-6
+                        py-3
+                        text-left text-xs
+                        font-medium
+                        text-gray-500
+                        uppercase
+                        tracking-wider
+                      "
+                    >
+                      incoming
+                    </th>
+                    <th
+                      scope="col"
+                      class="
+                        px-6
+                        py-3
+                        text-left text-xs
+                        font-medium
+                        text-gray-500
+                        uppercase
+                        tracking-wider
+                      "
+                    >
+                      outgoing
+                    </th>
+
+                    <th scope="col" class="relative px-6 py-3">
+                      <span class="sr-only">Edit</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="text-sm font-medium text-gray-900">
+                          January 2022
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <span
+                          class="
+                            px-2
+                            inline-flex
+                            text-xs
+                            font-semibold
+                            rounded-full
+                            bg-green-100
+                            text-green-800
+                          "
+                        >
+                          &dollar;2700
+                        </span>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <span
+                          class="
+                            px-2
+                            inline-flex
+                            text-xs
+                            leading-5
+                            font-semibold
+                            rounded-full
+                            bg-red-100
+                            text-red-800
+                          "
+                        >
+                          &dollar;2100
+                        </span>
+                      </div>
+                    </td>
+                    <td
+                      class="
+                        px-6
+                        py-4
+                        whitespace-nowrap
+                        text-right text-sm
+                        font-medium
+                      "
+                    >
+                      <a href="#" class="text-indigo-600 hover:text-indigo-900"
+                        >Edit</a
+                      >
+                    </td>
+                  </tr>
+                  <!-- More people... -->
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="text-sm font-medium text-gray-900">
+                          February 2022
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <span
+                          class="
+                            px-2
+                            inline-flex
+                            text-xs
+                            font-semibold
+                            rounded-full
+                            bg-green-100
+                            text-green-800
+                          "
+                        >
+                          &dollar;2700
+                        </span>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <span
+                          class="
+                            px-2
+                            inline-flex
+                            text-xs
+                            leading-5
+                            font-semibold
+                            rounded-full
+                            bg-red-100
+                            text-red-800
+                          "
+                        >
+                          &dollar;2100
+                        </span>
+                      </div>
+                    </td>
+                    <td
+                      class="
+                        px-6
+                        py-4
+                        whitespace-nowrap
+                        text-right text-sm
+                        font-medium
+                      "
+                    >
+                      <a href="#" class="text-indigo-600 hover:text-indigo-900"
+                        >Edit</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="text-sm font-medium text-gray-900">
+                          March 2022
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <span
+                          class="
+                            px-2
+                            inline-flex
+                            text-xs
+                            font-semibold
+                            rounded-full
+                            bg-green-100
+                            text-green-800
+                          "
+                        >
+                          &dollar;2700
+                        </span>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <span
+                          class="
+                            px-2
+                            inline-flex
+                            text-xs
+                            leading-5
+                            font-semibold
+                            rounded-full
+                            bg-red-100
+                            text-red-800
+                          "
+                        >
+                          &dollar;2100
+                        </span>
+                      </div>
+                    </td>
+                    <td
+                      class="
+                        px-6
+                        py-4
+                        whitespace-nowrap
+                        text-right text-sm
+                        font-medium
+                      "
+                    >
+                      <a href="#" class="text-indigo-600 hover:text-indigo-900"
+                        >Edit</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="text-sm font-medium text-gray-900">
+                          April 2022
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <span
+                          class="
+                            px-2
+                            inline-flex
+                            text-xs
+                            font-semibold
+                            rounded-full
+                            bg-green-100
+                            text-green-800
+                          "
+                        >
+                          &dollar;2700
+                        </span>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <span
+                          class="
+                            px-2
+                            inline-flex
+                            text-xs
+                            leading-5
+                            font-semibold
+                            rounded-full
+                            bg-red-100
+                            text-red-800
+                          "
+                        >
+                          &dollar;2100
+                        </span>
+                      </div>
+                    </td>
+                    <td
+                      class="
+                        px-6
+                        py-4
+                        whitespace-nowrap
+                        text-right text-sm
+                        font-medium
+                      "
+                    >
+                      <a href="#" class="text-indigo-600 hover:text-indigo-900"
+                        >Edit</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="text-sm font-medium text-gray-900">
+                          May 2022
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <span
+                          class="
+                            px-2
+                            inline-flex
+                            text-xs
+                            font-semibold
+                            rounded-full
+                            bg-green-100
+                            text-green-800
+                          "
+                        >
+                          &dollar;2700
+                        </span>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <span
+                          class="
+                            px-2
+                            inline-flex
+                            text-xs
+                            leading-5
+                            font-semibold
+                            rounded-full
+                            bg-red-100
+                            text-red-800
+                          "
+                        >
+                          &dollar;2100
+                        </span>
+                      </div>
+                    </td>
+                    <td
+                      class="
+                        px-6
+                        py-4
+                        whitespace-nowrap
+                        text-right text-sm
+                        font-medium
+                      "
+                    >
+                      <a href="#" class="text-indigo-600 hover:text-indigo-900"
+                        >Edit</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
