@@ -9,25 +9,17 @@
   </head>
   <body>
     <nav class="bg-green-800">
-      <div class="max-w-7xl mx-auto">
+      <div class="mx-auto uppercase max-w-7xl">
         <div class="flex justify-between">
           <!-- logo -->
           <div>
             <a
-              href="./home.html"
-              class="
-                flex
-                items-center
-                py-3
-                px-2
-                text-yellow-300
-                hover:text-yellow-500
-                focus:bg-green-600
-              "
+              href="./budgets.html"
+              class="flex items-center px-2 py-3 text-yellow-300  hover:text-yellow-500 focus:bg-green-600"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-10 w-10 mr-1"
+                class="w-10 h-10 mr-1"
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -45,137 +37,42 @@
           </div>
 
           <!-- main navigation -->
-          <div class="hidden md:flex items-center space-x-1">
+          <div class="flex items-center space-x-1">
             <a
-              href="home.html"
-              class="
-                py-5
-                px-3
-                text-yellow-300
-                hover:text-yellow-500
-                focus:bg-green-600
-              "
-              >home</a
+              href="#"
+              class="px-3 py-5 text-yellow-300  hover:text-yellow-500 focus:bg-green-600"
+              >log in</a
             >
             <a
               href="#"
-              class="
-                py-5
-                px-3
-                text-yellow-300
-                hover:text-yellow-500
-                focus:bg-green-600
-              "
-              >budgets</a
+              class="px-3 py-5 text-yellow-300  hover:text-yellow-500 focus:bg-green-600"
+              >register</a
             >
-            <a
-              href="#"
-              class="
-                py-5
-                px-3
-                text-yellow-300
-                hover:text-yellow-500
-                focus:bg-green-600
-              "
-              >about</a
-            >
-            <a
-              href="#"
-              class="
-                py-5
-                px-3
-                text-yellow-300
-                hover:text-yellow-500
-                focus:bg-green-600
-              "
-              >contact</a
-            >
-          </div>
-
-          <!-- mobile navigation button-->
-          <div
-            class="
-              md:hidden
-              py-5
-              px-3
-              flex
-              item-center
-              text-yellow-300
-              hover:text-yellow-500
-            "
-          >
-            <button class="mobile-nav-btn">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </button>
           </div>
         </div>
-      </div>
-      <!-- mobile navigation  -->
-      <div
-        class="
-          mobile-nav
-          hidden
-          md:hidden
-          flex flex-col
-          text-center
-          bg-green-700
-        "
-      >
-        <a href="#" class="py-5 px-3 text-yellow-300 hover:text-yellow-500"
-          >home</a
-        >
-        <a href="#" class="py-5 px-3 text-yellow-300 hover:text-yellow-500"
-          >budgets</a
-        >
-        <a href="#" class="py-5 px-3 text-yellow-300 hover:text-yellow-500"
-          >about</a
-        >
-        <a href="#" class="py-5 px-3 text-yellow-300 hover:text-yellow-500"
-          >contact</a
-        >
       </div>
     </nav>
 
     <!-- content goes here -->
     <div
-      class="
-        min-h-full
-        flex
-        items-center
-        justify-center
-        py-12
-        px-4
-        sm:px-6
-        lg:px-8
-      "
+      class="flex items-center justify-center min-h-full px-4 py-12  sm:px-6 lg:px-8"
     >
-      <div class="max-w-md w-full space-y-8">
+      <div class="w-full max-w-md space-y-8">
         <div>
-          <img class="mx-auto h-12 w-auto" />
-          <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-800">
+          <img class="w-auto h-12 mx-auto" />
+          <h2 class="mt-6 text-3xl font-extrabold text-center text-gray-800">
             log in to your account
           </h2>
-          <p class="mt-2 text-center text-sm text-gray-600">
-            Or
+          <p class="mt-2 text-sm text-center text-gray-600">
+            or
             <a href="#" class="font-medium text-green-800 hover:text-green-500">
               register now
             </a>
           </p>
         </div>
-        <form class="mt-8 space-y-6" action="#" method="POST">
+        <form class="mt-8 space-y-6" action="./budgets.html" method="POST">
           <input type="hidden" name="remember" value="true" />
-          <div class="rounded-md shadow-sm -space-y-px">
+          <div class="-space-y-px rounded-md shadow-sm">
             <div>
               <label for="email-address" class="sr-only">email address</label>
               <input
@@ -184,24 +81,7 @@
                 type="email"
                 autocomplete="email"
                 required
-                class="
-                  appearance-none
-                  rounded-none
-                  relative
-                  block
-                  w-full
-                  px-3
-                  py-2
-                  border border-gray-300
-                  placeholder-gray-500
-                  text-gray-800
-                  rounded-t-md
-                  focus:outline-none
-                  focus:ring-green-500
-                  focus:border-green-500
-                  focus:z-10
-                  sm:text-sm
-                "
+                class="relative block w-full px-3 py-2 text-gray-800 placeholder-gray-500 border border-gray-300 rounded-none appearance-none  rounded-t-md focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm"
                 placeholder="email address"
               />
             </div>
@@ -213,24 +93,7 @@
                 type="password"
                 autocomplete="current-password"
                 required
-                class="
-                  appearance-none
-                  rounded-none
-                  relative
-                  block
-                  w-full
-                  px-3
-                  py-2
-                  border border-gray-300
-                  placeholder-gray-500
-                  text-gray-800
-                  rounded-b-md
-                  focus:outline-none
-                  focus:ring-green-500
-                  focus:border-green-500
-                  focus:z-10
-                  sm:text-sm
-                "
+                class="relative block w-full px-3 py-2 text-gray-800 placeholder-gray-500 border border-gray-300 rounded-none appearance-none  rounded-b-md focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm"
                 placeholder="password"
               />
             </div>
@@ -242,16 +105,9 @@
                 id="remember-me"
                 name="remember-me"
                 type="checkbox"
-                class="
-                  h-4
-                  w-4
-                  text-green-800
-                  focus:ring-green-500
-                  border-gray-300
-                  rounded
-                "
+                class="w-4 h-4 text-green-800 border-gray-300 rounded  focus:ring-green-500"
               />
-              <label for="remember-me" class="ml-2 block text-sm text-gray-900">
+              <label for="remember-me" class="block ml-2 text-sm text-gray-900">
                 remember me
               </label>
             </div>
@@ -269,31 +125,12 @@
           <div>
             <button
               type="submit"
-              class="
-                group
-                relative
-                w-full
-                flex
-                justify-center
-                py-2
-                px-4
-                border border-transparent
-                text-sm
-                font-medium
-                rounded-md
-                text-white
-                bg-green-800
-                hover:bg-green-600
-                focus:outline-none
-                focus:ring-2
-                focus:ring-offset-2
-                focus:ring-green-500
-              "
+              class="relative flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-green-800 border border-transparent rounded-md  group hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
             >
-              <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+              <span class="absolute inset-y-0 left-0 flex items-center pl-3">
                 <!-- Heroicon name: solid/lock-closed -->
                 <svg
-                  class="h-5 w-5 text-green-500 group-hover:text-green-400"
+                  class="w-5 h-5 text-green-500 group-hover:text-green-400"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"

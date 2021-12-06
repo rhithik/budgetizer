@@ -9,25 +9,17 @@
   </head>
   <body>
     <nav class="bg-green-800">
-      <div class="max-w-7xl mx-auto">
+      <div class="mx-auto max-w-7xl">
         <div class="flex justify-between">
           <!-- logo -->
           <div>
             <a
-              href="#"
-              class="
-                flex
-                items-center
-                py-3
-                px-2
-                text-yellow-300
-                hover:text-yellow-500
-                focus:bg-green-600
-              "
+              href="./budgets.html"
+              class="flex items-center px-2 py-3 text-yellow-300  hover:text-yellow-500 focus:bg-green-600"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-10 w-10 mr-1"
+                class="w-10 h-10 mr-1"
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -40,74 +32,37 @@
                   clip-rule="evenodd"
                 />
               </svg>
-              <span>budgetizer</span>
+              <span class="uppercase">budgetizer</span>
             </a>
           </div>
 
           <!-- main navigation -->
-          <div class="hidden md:flex items-center space-x-1">
+          <div class="items-center hidden space-x-1 uppercase md:flex">
             <a
-              href="./home.html"
-              class="
-                py-5
-                px-3
-                text-yellow-300
-                hover:text-yellow-500
-                focus:bg-green-600
-              "
-              >home</a
-            >
-            <a
-              href="#"
-              class="
-                py-5
-                px-3
-                text-yellow-300
-                hover:text-yellow-500
-                focus:bg-green-600
-              "
+              href="./budgets.html"
+              class="px-3 py-5 text-yellow-300  hover:text-yellow-500 focus:bg-green-600"
               >budgets</a
             >
             <a
               href="#"
-              class="
-                py-5
-                px-3
-                text-yellow-300
-                hover:text-yellow-500
-                focus:bg-green-600
-              "
+              class="px-3 py-5 text-yellow-300  hover:text-yellow-500 focus:bg-green-600"
               >about</a
             >
             <a
               href="#"
-              class="
-                py-5
-                px-3
-                text-yellow-300
-                hover:text-yellow-500
-                focus:bg-green-600
-              "
+              class="px-3 py-5 text-yellow-300  hover:text-yellow-500 focus:bg-green-600"
               >contact</a
             >
           </div>
 
           <!-- mobile navigation button-->
           <div
-            class="
-              md:hidden
-              py-5
-              px-3
-              flex
-              item-center
-              text-yellow-300
-              hover:text-yellow-500
-            "
+            class="flex px-3 py-5 text-yellow-300  md:hidden item-center hover:text-yellow-500"
           >
             <button class="mobile-nav-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
+                class="w-6 h-6"
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -123,25 +78,17 @@
       </div>
       <!-- mobile navigation  -->
       <div
-        class="
-          mobile-nav
-          hidden
-          md:hidden
-          flex flex-col
-          text-center
-          bg-green-700
-        "
+        class="flex flex-col hidden text-center bg-green-700  mobile-nav md:hidden"
       >
-        <a href="#" class="py-5 px-3 text-yellow-300 hover:text-yellow-500"
-          >home</a
-        >
-        <a href="#" class="py-5 px-3 text-yellow-300 hover:text-yellow-500"
+        <a
+          href="./budgets.html"
+          class="px-3 py-5 text-yellow-300 hover:text-yellow-500"
           >budgets</a
         >
-        <a href="#" class="py-5 px-3 text-yellow-300 hover:text-yellow-500"
+        <a href="#" class="px-3 py-5 text-yellow-300 hover:text-yellow-500"
           >about</a
         >
-        <a href="#" class="py-5 px-3 text-yellow-300 hover:text-yellow-500"
+        <a href="#" class="px-3 py-5 text-yellow-300 hover:text-yellow-500"
           >contact</a
         >
       </div>
@@ -152,23 +99,14 @@
     <div class="flex justify-center mx-auto">
       <div class="flex flex-col max-w-6xl space-x-4 space-y-4">
         <h1
-          class="
-            text-2xl
-            pt-8
-            text-green-800
-            group
-            relative
-            w-full
-            flex
-            justify-center
-          "
+          class="relative flex justify-center w-full pt-8 text-2xl text-green-700  group"
         >
           Budgets
-          <span class="absolute right-12 flex items-center pb-4">
+          <span class="absolute flex items-center pb-4 right-12">
             <a href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-10 w-10 hover:text-green-500 focus:text-green-500"
+                class="w-10 h-10 hover:text-green-500 focus:text-green-500"
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -183,58 +121,29 @@
         </h1>
         <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div
-            class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8"
+            class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8"
           >
             <div
-              class="
-                shadow
-                overflow-hidden
-                border-b border-gray-200
-                sm:rounded-lg
-              "
+              class="overflow-hidden border-b border-gray-200 shadow  sm:rounded-lg"
             >
               <table class="min-w-full divide-y divide-gray-200">
                 <thead class="bg-gray-50">
                   <tr>
                     <th
                       scope="col"
-                      class="
-                        px-6
-                        py-3
-                        text-left text-xs
-                        font-medium
-                        text-gray-500
-                        uppercase
-                        tracking-wider
-                      "
+                      class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase "
                     >
                       month
                     </th>
                     <th
                       scope="col"
-                      class="
-                        px-6
-                        py-3
-                        text-left text-xs
-                        font-medium
-                        text-gray-500
-                        uppercase
-                        tracking-wider
-                      "
+                      class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase "
                     >
                       incoming
                     </th>
                     <th
                       scope="col"
-                      class="
-                        px-6
-                        py-3
-                        text-left text-xs
-                        font-medium
-                        text-gray-500
-                        uppercase
-                        tracking-wider
-                      "
+                      class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase "
                     >
                       outgoing
                     </th>
@@ -249,22 +158,14 @@
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <div class="text-sm font-medium text-gray-900">
-                          January 2022
+                          <a href="#">January 2022</a>
                         </div>
                       </div>
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <span
-                          class="
-                            px-2
-                            inline-flex
-                            text-xs
-                            font-semibold
-                            rounded-full
-                            bg-green-100
-                            text-green-800
-                          "
+                          class="inline-flex px-2 text-xs font-semibold text-green-800 bg-green-100 rounded-full "
                         >
                           &dollar;2700
                         </span>
@@ -273,29 +174,14 @@
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <span
-                          class="
-                            px-2
-                            inline-flex
-                            text-xs
-                            leading-5
-                            font-semibold
-                            rounded-full
-                            bg-red-100
-                            text-red-800
-                          "
+                          class="inline-flex px-2 text-xs font-semibold leading-5 text-red-800 bg-red-100 rounded-full "
                         >
                           &dollar;2100
                         </span>
                       </div>
                     </td>
                     <td
-                      class="
-                        px-6
-                        py-4
-                        whitespace-nowrap
-                        text-right text-sm
-                        font-medium
-                      "
+                      class="px-6 py-4 text-sm font-medium text-right  whitespace-nowrap"
                     >
                       <a href="#" class="text-indigo-600 hover:text-indigo-900"
                         >Edit</a
@@ -307,22 +193,14 @@
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <div class="text-sm font-medium text-gray-900">
-                          February 2022
+                          <a href="#">February 2022</a>
                         </div>
                       </div>
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <span
-                          class="
-                            px-2
-                            inline-flex
-                            text-xs
-                            font-semibold
-                            rounded-full
-                            bg-green-100
-                            text-green-800
-                          "
+                          class="inline-flex px-2 text-xs font-semibold text-green-800 bg-green-100 rounded-full "
                         >
                           &dollar;2700
                         </span>
@@ -331,29 +209,14 @@
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <span
-                          class="
-                            px-2
-                            inline-flex
-                            text-xs
-                            leading-5
-                            font-semibold
-                            rounded-full
-                            bg-red-100
-                            text-red-800
-                          "
+                          class="inline-flex px-2 text-xs font-semibold leading-5 text-red-800 bg-red-100 rounded-full "
                         >
                           &dollar;2100
                         </span>
                       </div>
                     </td>
                     <td
-                      class="
-                        px-6
-                        py-4
-                        whitespace-nowrap
-                        text-right text-sm
-                        font-medium
-                      "
+                      class="px-6 py-4 text-sm font-medium text-right  whitespace-nowrap"
                     >
                       <a href="#" class="text-indigo-600 hover:text-indigo-900"
                         >Edit</a
@@ -364,22 +227,14 @@
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <div class="text-sm font-medium text-gray-900">
-                          March 2022
+                          <a href="#">March 2022</a>
                         </div>
                       </div>
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <span
-                          class="
-                            px-2
-                            inline-flex
-                            text-xs
-                            font-semibold
-                            rounded-full
-                            bg-green-100
-                            text-green-800
-                          "
+                          class="inline-flex px-2 text-xs font-semibold text-green-800 bg-green-100 rounded-full "
                         >
                           &dollar;2700
                         </span>
@@ -388,29 +243,14 @@
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <span
-                          class="
-                            px-2
-                            inline-flex
-                            text-xs
-                            leading-5
-                            font-semibold
-                            rounded-full
-                            bg-red-100
-                            text-red-800
-                          "
+                          class="inline-flex px-2 text-xs font-semibold leading-5 text-red-800 bg-red-100 rounded-full "
                         >
                           &dollar;2100
                         </span>
                       </div>
                     </td>
                     <td
-                      class="
-                        px-6
-                        py-4
-                        whitespace-nowrap
-                        text-right text-sm
-                        font-medium
-                      "
+                      class="px-6 py-4 text-sm font-medium text-right  whitespace-nowrap"
                     >
                       <a href="#" class="text-indigo-600 hover:text-indigo-900"
                         >Edit</a
@@ -421,22 +261,14 @@
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <div class="text-sm font-medium text-gray-900">
-                          April 2022
+                          <a href="#">April 2022</a>
                         </div>
                       </div>
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <span
-                          class="
-                            px-2
-                            inline-flex
-                            text-xs
-                            font-semibold
-                            rounded-full
-                            bg-green-100
-                            text-green-800
-                          "
+                          class="inline-flex px-2 text-xs font-semibold text-green-800 bg-green-100 rounded-full "
                         >
                           &dollar;2700
                         </span>
@@ -445,29 +277,14 @@
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <span
-                          class="
-                            px-2
-                            inline-flex
-                            text-xs
-                            leading-5
-                            font-semibold
-                            rounded-full
-                            bg-red-100
-                            text-red-800
-                          "
+                          class="inline-flex px-2 text-xs font-semibold leading-5 text-red-800 bg-red-100 rounded-full "
                         >
                           &dollar;2100
                         </span>
                       </div>
                     </td>
                     <td
-                      class="
-                        px-6
-                        py-4
-                        whitespace-nowrap
-                        text-right text-sm
-                        font-medium
-                      "
+                      class="px-6 py-4 text-sm font-medium text-right  whitespace-nowrap"
                     >
                       <a href="#" class="text-indigo-600 hover:text-indigo-900"
                         >Edit</a
@@ -478,22 +295,14 @@
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <div class="text-sm font-medium text-gray-900">
-                          May 2022
+                          <a href="#">May 2022</a>
                         </div>
                       </div>
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <span
-                          class="
-                            px-2
-                            inline-flex
-                            text-xs
-                            font-semibold
-                            rounded-full
-                            bg-green-100
-                            text-green-800
-                          "
+                          class="inline-flex px-2 text-xs font-semibold text-green-800 bg-green-100 rounded-full "
                         >
                           &dollar;2700
                         </span>
@@ -502,29 +311,14 @@
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <span
-                          class="
-                            px-2
-                            inline-flex
-                            text-xs
-                            leading-5
-                            font-semibold
-                            rounded-full
-                            bg-red-100
-                            text-red-800
-                          "
+                          class="inline-flex px-2 text-xs font-semibold leading-5 text-red-800 bg-red-100 rounded-full "
                         >
                           &dollar;2100
                         </span>
                       </div>
                     </td>
                     <td
-                      class="
-                        px-6
-                        py-4
-                        whitespace-nowrap
-                        text-right text-sm
-                        font-medium
-                      "
+                      class="px-6 py-4 text-sm font-medium text-right  whitespace-nowrap"
                     >
                       <a href="#" class="text-indigo-600 hover:text-indigo-900"
                         >Edit</a
