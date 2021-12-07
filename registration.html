@@ -15,7 +15,15 @@
           <div>
             <a
               href="./budgets.html"
-              class="flex items-center px-2 py-3 text-yellow-300 hover:text-yellow-500 focus:bg-green-600"
+              class="
+                flex
+                items-center
+                px-2
+                py-3
+                text-yellow-300
+                hover:text-yellow-500
+                focus:bg-green-600
+              "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -37,22 +45,82 @@
           </div>
 
           <!-- main navigation -->
-          <div class="flex items-center space-x-1 uppercase">
+          <div class="hidden md:flex items-center space-x-1 uppercase">
             <a
               href="#"
-              class="px-3 py-5 text-yellow-300 hover:text-yellow-500 focus:bg-green-600"
+              class="
+                px-3
+                py-5
+                text-yellow-300
+                hover:text-yellow-500
+                focus:bg-green-600
+              "
               >log in</a
             >
 
             <a
               href="#"
-              class="px-3 py-5 text-yellow-300 hover:text-yellow-500 focus:bg-green-600"
+              class="
+                px-3
+                py-5
+                text-yellow-300
+                hover:text-yellow-500
+                focus:bg-green-600
+              "
               >register</a
             >
           </div>
+
+          <!-- mobile navigation button-->
+          <div
+            class="
+              flex
+              px-3
+              py-5
+              text-yellow-300
+              md:hidden
+              item-center
+              hover:text-yellow-500
+            "
+          >
+            <button class="mobile-nav-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
+      <!-- mobile navigation  -->
+      <div
+        class="
+          flex flex-col
+          hidden
+          text-center
+          bg-green-700
+          mobile-nav
+          md:hidden
+        "
+      >
+        <a
+          href="./budgets.html"
+          class="px-3 py-5 text-yellow-300 hover:text-yellow-500"
+          >log in</a
+        >
+        <a href="#" class="px-3 py-5 text-yellow-300 hover:text-yellow-500"
+          >register</a
+        >
+      </div>
     </nav>
+    <script src="./script.js"></script>
   </body>
 </html>

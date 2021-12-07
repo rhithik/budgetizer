@@ -15,7 +15,15 @@
           <div>
             <a
               href="./budgets.html"
-              class="flex items-center px-2 py-3 text-yellow-300  hover:text-yellow-500 focus:bg-green-600"
+              class="
+                flex
+                items-center
+                px-2
+                py-3
+                text-yellow-300
+                hover:text-yellow-500
+                focus:bg-green-600
+              "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -37,116 +45,250 @@
           </div>
 
           <!-- main navigation -->
-          <div class="flex items-center space-x-1">
+          <div class="hidden md:flex items-center space-x-1">
             <a
               href="#"
-              class="px-3 py-5 text-yellow-300  hover:text-yellow-500 focus:bg-green-600"
+              class="
+                px-3
+                py-5
+                text-yellow-300
+                hover:text-yellow-500
+                focus:bg-green-600
+              "
               >log in</a
             >
             <a
               href="#"
-              class="px-3 py-5 text-yellow-300  hover:text-yellow-500 focus:bg-green-600"
+              class="
+                px-3
+                py-5
+                text-yellow-300
+                hover:text-yellow-500
+                focus:bg-green-600
+              "
               >register</a
             >
           </div>
+
+          <!-- mobile navigation button-->
+          <div
+            class="
+              flex
+              px-3
+              py-5
+              text-yellow-300
+              md:hidden
+              item-center
+              hover:text-yellow-500
+            "
+          >
+            <button class="mobile-nav-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
+      </div>
+      <!-- mobile navigation  -->
+      <div
+        class="
+          flex flex-col
+          hidden
+          text-center
+          bg-green-700
+          mobile-nav
+          md:hidden
+        "
+      >
+        <a
+          href="./budgets.html"
+          class="px-3 py-5 text-yellow-300 hover:text-yellow-500"
+          >log in</a
+        >
+        <a href="#" class="px-3 py-5 text-yellow-300 hover:text-yellow-500"
+          >register</a
+        >
       </div>
     </nav>
 
     <!-- content goes here -->
-    <div
-      class="flex items-center justify-center min-h-full px-4 py-12  sm:px-6 lg:px-8"
-    >
-      <div class="w-full max-w-md space-y-8">
-        <div>
-          <img class="w-auto h-12 mx-auto" />
-          <h2 class="mt-6 text-3xl font-extrabold text-center text-gray-800">
-            log in to your account
-          </h2>
-          <p class="mt-2 text-sm text-center text-gray-600">
-            or
-            <a href="#" class="font-medium text-green-800 hover:text-green-500">
-              register now
-            </a>
-          </p>
-        </div>
-        <form class="mt-8 space-y-6" action="./budgets.html" method="POST">
-          <input type="hidden" name="remember" value="true" />
-          <div class="-space-y-px rounded-md shadow-sm">
-            <div>
-              <label for="email-address" class="sr-only">email address</label>
-              <input
-                id="email-address"
-                name="email"
-                type="email"
-                autocomplete="email"
-                required
-                class="relative block w-full px-3 py-2 text-gray-800 placeholder-gray-500 border border-gray-300 rounded-none appearance-none  rounded-t-md focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm"
-                placeholder="email address"
-              />
-            </div>
-            <div>
-              <label for="password" class="sr-only">password</label>
-              <input
-                id="password"
-                name="password"
-                type="password"
-                autocomplete="current-password"
-                required
-                class="relative block w-full px-3 py-2 text-gray-800 placeholder-gray-500 border border-gray-300 rounded-none appearance-none  rounded-b-md focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm"
-                placeholder="password"
-              />
-            </div>
-          </div>
-
-          <div class="flex items-center justify-between">
-            <div class="flex items-center">
-              <input
-                id="remember-me"
-                name="remember-me"
-                type="checkbox"
-                class="w-4 h-4 text-green-800 border-gray-300 rounded  focus:ring-green-500"
-              />
-              <label for="remember-me" class="block ml-2 text-sm text-gray-900">
-                remember me
-              </label>
-            </div>
-
-            <div class="text-sm">
+    <div class="flex items-center justify-center">
+      <div
+        class="
+          flex
+          items-center
+          justify-center
+          min-h-full
+          px-4
+          py-12
+          sm:w-2/3 sm:px-6
+          lg:px-8
+        "
+      >
+        <div class="w-full max-w-md space-y-8">
+          <div>
+            <img class="w-auto h-12 mx-auto" />
+            <h2 class="mt-6 text-3xl font-extrabold text-center text-gray-800">
+              log in to your account
+            </h2>
+            <p class="mt-2 text-sm text-center text-gray-600">
+              or
               <a
                 href="#"
                 class="font-medium text-green-800 hover:text-green-500"
               >
-                forgot your password?
+                register now
               </a>
+            </p>
+          </div>
+          <form class="mt-8 space-y-6" action="./budgets.html" method="POST">
+            <input type="hidden" name="remember" value="true" />
+            <div class="-space-y-px rounded-md shadow-sm">
+              <div>
+                <label for="email-address" class="sr-only">email address</label>
+                <input
+                  id="email-address"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  class="
+                    relative
+                    block
+                    w-full
+                    px-3
+                    py-2
+                    text-gray-800
+                    placeholder-gray-500
+                    border border-gray-300
+                    rounded-none
+                    appearance-none
+                    rounded-t-md
+                    focus:outline-none
+                    focus:ring-green-500
+                    focus:border-green-500
+                    focus:z-10
+                    sm:text-sm
+                  "
+                  placeholder="email address"
+                />
+              </div>
+              <div>
+                <label for="password" class="sr-only">password</label>
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  autocomplete="current-password"
+                  required
+                  class="
+                    relative
+                    block
+                    w-full
+                    px-3
+                    py-2
+                    text-gray-800
+                    placeholder-gray-500
+                    border border-gray-300
+                    rounded-none
+                    appearance-none
+                    rounded-b-md
+                    focus:outline-none
+                    focus:ring-green-500
+                    focus:border-green-500
+                    focus:z-10
+                    sm:text-sm
+                  "
+                  placeholder="password"
+                />
+              </div>
             </div>
-          </div>
-
-          <div>
-            <button
-              type="submit"
-              class="relative flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-green-800 border border-transparent rounded-md  group hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
-            >
-              <span class="absolute inset-y-0 left-0 flex items-center pl-3">
-                <!-- Heroicon name: solid/lock-closed -->
-                <svg
-                  class="w-5 h-5 text-green-500 group-hover:text-green-400"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <input
+                  id="remember-me"
+                  name="remember-me"
+                  type="checkbox"
+                  class="
+                    w-4
+                    h-4
+                    text-green-800
+                    border-gray-300
+                    rounded
+                    focus:ring-green-500
+                  "
+                />
+                <label
+                  for="remember-me"
+                  class="block ml-2 text-sm text-gray-900"
                 >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </span>
-              <span class="text-yellow-300">log in</span>
-            </button>
-          </div>
-        </form>
+                  remember me
+                </label>
+              </div>
+              <div class="text-sm">
+                <a
+                  href="#"
+                  class="font-medium text-green-800 hover:text-green-500"
+                >
+                  forgot your password?
+                </a>
+              </div>
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="
+                  relative
+                  flex
+                  justify-center
+                  w-full
+                  px-4
+                  py-2
+                  text-sm
+                  font-medium
+                  text-white
+                  bg-green-800
+                  border border-transparent
+                  rounded-md
+                  group
+                  hover:bg-green-600
+                  focus:outline-none
+                  focus:ring-2
+                  focus:ring-offset-2
+                  focus:ring-green-500
+                "
+              >
+                <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                  <!-- Heroicon name: solid/lock-closed -->
+                  <svg
+                    class="w-5 h-5 text-green-500 group-hover:text-green-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </span>
+                <span class="text-yellow-300">log in</span>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
 
