@@ -136,9 +136,242 @@
     </nav>
 
     <!-- main content -->
-
-    <div class="flex justify-center items-center">
-      <div>this is where the budget builder goes</div>
+    <div class="flex flex-col justify-center">
+      <h1 class="mt-6 text-3xl font-extrabold text-center text-gray-800">
+        New Budget
+      </h1>
+      <div class="mt-8 mx-auto w-3/4">
+        <div class="py-8 px-6 shadow rounded-lg sm:px-10">
+          <form class="space-y-6" method="post">
+            <h3 class="text-center text-xl font-extrabold">
+              Choose Month and Pay Frequency
+            </h3>
+            <div class="flex">
+              <div>
+                <label
+                  for="month"
+                  class="block text-sm font-medium text-gray-700"
+                  >Month</label
+                >
+                <div>
+                  <select
+                    name="month"
+                    id="month"
+                    class="
+                      border border-green-600
+                      px-3
+                      py-2
+                      rounded-lg
+                      shadow-sm
+                      focus:outline-none
+                      focus:border-green-700
+                      focus:ring-1
+                      focus:ring-green-700
+                      bg-white
+                    "
+                  >
+                    <option value="">Please select</option>
+                    <option value="jan">January</option>
+                    <option value="feb">February</option>
+                    <option value="mar">March</option>
+                    <option value="apr">April</option>
+                    <option value="may">May</option>
+                    <option value="jun">June</option>
+                    <option value="jul">July</option>
+                    <option value="aug">August</option>
+                    <option value="sep">September</option>
+                    <option value="oct">October</option>
+                    <option value="nov">November</option>
+                    <option value="dec">December</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div>
+              <label
+                for="frequency"
+                class="block text-sm font-medium text-gray-700"
+                >Pay frequency</label
+              >
+              <div class="mt-1">
+                <select
+                  name="frequency"
+                  id="frequency"
+                  class="
+                    border border-green-600
+                    px-3
+                    py-2
+                    rounded-lg
+                    shadow-sm
+                    focus:outline-none
+                    focus:border-green-700
+                    focus:ring-1
+                    focus:ring-green-700
+                    bg-white
+                  "
+                >
+                  <option value="">Please select</option>
+                  <option value="weekly">Weekly</option>
+                  <option value="bi-weekly">Bi-Weekly</option>
+                  <option value="monthly">Monthly</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="mt-8 mx-auto w-3/4">
+        <div class="py-8 px-6 shadow rounded-lg sm:px-10">
+          <form class="space-y-6" method="post">
+            <h3 class="text-center text-xl font-extrabold">Paycheck Amounts</h3>
+            <div>
+              <label for="p1" class="block text-sm font-medium text-gray-700"
+                >Paycheck #1</label
+              >
+              <div class="mt-1">
+                <input
+                  type="number"
+                  name="p1"
+                  id="p2"
+                  class="
+                    w-full
+                    border border-green-600
+                    px-3
+                    py-2
+                    rounded-lg
+                    shadow-sm
+                    focus:outline-none
+                    focus:border-green-700
+                    focus:ring-1
+                    focus:ring-green-700
+                    bg-white
+                  "
+                />
+              </div>
+            </div>
+            <div>
+              <label for="p2" class="block text-sm font-medium text-gray-700"
+                >Paycheck #2</label
+              >
+              <div class="mt-1">
+                <input
+                  type="number"
+                  name="p2"
+                  id="p2"
+                  class="
+                    w-full
+                    border border-green-600
+                    px-3
+                    py-2
+                    rounded-lg
+                    shadow-sm
+                    focus:outline-none
+                    focus:border-green-700
+                    focus:ring-1
+                    focus:ring-green-700
+                    bg-white
+                  "
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="mt-8 mx-auto w-3/4">
+        <div class="py-8 px-6 shadow rounded-lg sm:px-10">
+          <form class="space-y-6" method="post">
+            <h3 class="text-center text-xl font-extrabold">Monthly Expenses</h3>
+            <div class="flex justify-around">
+              <div>
+                <label
+                  for="eName"
+                  class="block text-sm font-medium text-gray-700"
+                  >Name</label
+                >
+                <div class="mt-1">
+                  <input
+                    type="text"
+                    name="eName"
+                    id="eName"
+                    class="
+                      w-full
+                      border border-green-600
+                      px-3
+                      py-2
+                      rounded-lg
+                      shadow-sm
+                      focus:outline-none
+                      focus:border-green-700
+                      focus:ring-1
+                      focus:ring-green-700
+                      bg-white
+                    "
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  for="eAmount"
+                  class="block text-sm font-medium text-gray-700"
+                  >Amount</label
+                >
+                <div class="mt-1">
+                  <input
+                    type="number"
+                    name="eAmount"
+                    id="eAmount"
+                    class="
+                      w-full
+                      border border-green-600
+                      px-3
+                      py-2
+                      rounded-lg
+                      shadow-sm
+                      focus:outline-none
+                      focus:border-green-700
+                      focus:ring-1
+                      focus:ring-green-700
+                      bg-white
+                    "
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  for="ePay"
+                  class="block text-sm font-medium text-gray-700"
+                  >Paycheck</label
+                >
+                <div class="mt-1">
+                  <select
+                    type="number"
+                    name="p2"
+                    id="p2"
+                    class="
+                      w-full
+                      border border-green-600
+                      px-3
+                      py-2
+                      rounded-lg
+                      shadow-sm
+                      focus:outline-none
+                      focus:border-green-700
+                      focus:ring-1
+                      focus:ring-green-700
+                      bg-white
+                    "
+                  >
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>
