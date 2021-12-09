@@ -8,22 +8,15 @@
     <link rel="stylesheet" href="/tailwind.css" />
   </head>
   <body>
-    <nav class="bg-green-800">
+    <header class="h-16"></header>
+    <nav class="fixed inset-x-0 top-0 z-50 h-16 bg-green-800">
       <div class="mx-auto uppercase max-w-7xl">
         <div class="flex justify-between">
           <!-- logo -->
           <div>
             <a
               href="./budgets.html"
-              class="
-                flex
-                items-center
-                px-2
-                py-3
-                text-yellow-300
-                hover:text-yellow-500
-                focus:bg-green-600
-              "
+              class="flex items-center px-2 py-3 text-yellow-300  hover:text-yellow-500 focus:bg-green-600"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -43,44 +36,22 @@
               <span>budgetizer</span>
             </a>
           </div>
-
           <!-- main navigation -->
-          <div class="hidden md:flex items-center space-x-1">
+          <div class="items-center hidden space-x-1 md:flex">
             <a
               href="#"
-              class="
-                px-3
-                py-5
-                text-yellow-300
-                hover:text-yellow-500
-                focus:bg-green-600
-              "
+              class="px-3 py-5 text-yellow-300  hover:text-yellow-500 focus:bg-green-600"
               >log in</a
             >
             <a
               href="#"
-              class="
-                px-3
-                py-5
-                text-yellow-300
-                hover:text-yellow-500
-                focus:bg-green-600
-              "
+              class="px-3 py-5 text-yellow-300  hover:text-yellow-500 focus:bg-green-600"
               >register</a
             >
           </div>
-
           <!-- mobile navigation button-->
           <div
-            class="
-              flex
-              px-3
-              py-5
-              text-yellow-300
-              md:hidden
-              item-center
-              hover:text-yellow-500
-            "
+            class="flex px-3 py-5 text-yellow-300  md:hidden item-center hover:text-yellow-500"
           >
             <button class="mobile-nav-btn">
               <svg
@@ -101,14 +72,7 @@
       </div>
       <!-- mobile navigation  -->
       <div
-        class="
-          flex flex-col
-          hidden
-          text-center
-          bg-green-700
-          mobile-nav
-          md:hidden
-        "
+        class="flex flex-col hidden text-center bg-green-700  mobile-nav md:hidden"
       >
         <a
           href="./budgets.html"
@@ -124,16 +88,7 @@
     <!-- content goes here -->
     <div class="flex items-center justify-center">
       <div
-        class="
-          flex
-          items-center
-          justify-center
-          min-h-full
-          px-4
-          py-12
-          sm:w-2/3 sm:px-6
-          lg:px-8
-        "
+        class="flex items-center justify-center min-h-full px-4 py-12  sm:w-2/3 sm:px-6 lg:px-8"
       >
         <div class="w-full max-w-md space-y-8">
           <div>
@@ -162,24 +117,7 @@
                   type="email"
                   autocomplete="email"
                   required
-                  class="
-                    relative
-                    block
-                    w-full
-                    px-3
-                    py-2
-                    text-gray-800
-                    placeholder-gray-500
-                    border border-gray-300
-                    rounded-none
-                    appearance-none
-                    rounded-t-md
-                    focus:outline-none
-                    focus:ring-green-500
-                    focus:border-green-500
-                    focus:z-10
-                    sm:text-sm
-                  "
+                  class="relative block w-full px-3 py-2 text-gray-800 placeholder-gray-500 border border-gray-300 rounded-none appearance-none  rounded-t-md focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm"
                   placeholder="email address"
                 />
               </div>
@@ -191,24 +129,7 @@
                   type="password"
                   autocomplete="current-password"
                   required
-                  class="
-                    relative
-                    block
-                    w-full
-                    px-3
-                    py-2
-                    text-gray-800
-                    placeholder-gray-500
-                    border border-gray-300
-                    rounded-none
-                    appearance-none
-                    rounded-b-md
-                    focus:outline-none
-                    focus:ring-green-500
-                    focus:border-green-500
-                    focus:z-10
-                    sm:text-sm
-                  "
+                  class="relative block w-full px-3 py-2 text-gray-800 placeholder-gray-500 border border-gray-300 rounded-none appearance-none  rounded-b-md focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm"
                   placeholder="password"
                 />
               </div>
@@ -219,14 +140,7 @@
                   id="remember-me"
                   name="remember-me"
                   type="checkbox"
-                  class="
-                    w-4
-                    h-4
-                    text-green-800
-                    border-gray-300
-                    rounded
-                    focus:ring-green-500
-                  "
+                  class="w-4 h-4 text-green-800 border-gray-300 rounded  focus:ring-green-500"
                 />
                 <label
                   for="remember-me"
@@ -247,26 +161,7 @@
             <div>
               <button
                 type="submit"
-                class="
-                  relative
-                  flex
-                  justify-center
-                  w-full
-                  px-4
-                  py-2
-                  text-sm
-                  font-medium
-                  text-white
-                  bg-green-800
-                  border border-transparent
-                  rounded-md
-                  group
-                  hover:bg-green-600
-                  focus:outline-none
-                  focus:ring-2
-                  focus:ring-offset-2
-                  focus:ring-green-500
-                "
+                class="relative flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-green-800 border border-transparent rounded-md  group hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
               >
                 <span class="absolute inset-y-0 left-0 flex items-center pl-3">
                   <!-- Heroicon name: solid/lock-closed -->

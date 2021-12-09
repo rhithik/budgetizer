@@ -8,22 +8,15 @@
     <link rel="stylesheet" href="/tailwind.css" />
   </head>
   <body>
-    <nav class="bg-green-800">
+    <header class="h-16"></header>
+    <nav class="fixed inset-x-0 top-0 z-50 h-16 bg-green-800">
       <div class="mx-auto max-w-7xl">
         <div class="flex justify-between">
           <!-- logo -->
           <div>
             <a
               href="./budgets.html"
-              class="
-                flex
-                items-center
-                px-2
-                py-3
-                text-yellow-300
-                hover:text-yellow-500
-                focus:bg-green-600
-              "
+              class="flex items-center px-2 py-3 text-yellow-300  hover:text-yellow-500 focus:bg-green-600"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -48,50 +41,24 @@
           <div class="items-center hidden space-x-1 uppercase md:flex">
             <a
               href="./budgets.html"
-              class="
-                px-3
-                py-5
-                text-yellow-300
-                hover:text-yellow-500
-                focus:bg-green-600
-              "
+              class="px-3 py-5 text-yellow-300  hover:text-yellow-500 focus:bg-green-600"
               >budgets</a
             >
             <a
               href="#"
-              class="
-                px-3
-                py-5
-                text-yellow-300
-                hover:text-yellow-500
-                focus:bg-green-600
-              "
+              class="px-3 py-5 text-yellow-300  hover:text-yellow-500 focus:bg-green-600"
               >about</a
             >
             <a
               href="#"
-              class="
-                px-3
-                py-5
-                text-yellow-300
-                hover:text-yellow-500
-                focus:bg-green-600
-              "
+              class="px-3 py-5 text-yellow-300  hover:text-yellow-500 focus:bg-green-600"
               >contact</a
             >
           </div>
 
           <!-- mobile navigation button-->
           <div
-            class="
-              flex
-              px-3
-              py-5
-              text-yellow-300
-              md:hidden
-              item-center
-              hover:text-yellow-500
-            "
+            class="flex px-3 py-5 text-yellow-300  md:hidden item-center hover:text-yellow-500"
           >
             <button class="mobile-nav-btn">
               <svg
@@ -112,14 +79,7 @@
       </div>
       <!-- mobile navigation  -->
       <div
-        class="
-          flex flex-col
-          hidden
-          text-center
-          bg-green-700
-          mobile-nav
-          md:hidden
-        "
+        class="flex flex-col hidden text-center bg-green-700  mobile-nav md:hidden"
       >
         <a
           href="./budgets.html"
@@ -140,14 +100,7 @@
     <div class="flex justify-center mx-auto">
       <div class="flex flex-col max-w-6xl space-x-4 space-y-4">
         <h1
-          class="
-            relative
-            flex
-            justify-center
-            pt-8
-            text-2xl text-green-700
-            group
-          "
+          class="relative flex justify-center pt-8 text-2xl text-green-700  group"
         >
           Budgets
           <span class="absolute flex items-center pb-4 right-12">
@@ -170,55 +123,26 @@
         <div class="sm:-mx-6 lg:-mx-8">
           <div class="inline-block py-2 align-middle sm:px-6 lg:px-8">
             <div
-              class="
-                overflow-hidden
-                border-b border-gray-200
-                shadow
-                sm:rounded-lg
-              "
+              class="overflow-hidden border-b border-gray-200 shadow  sm:rounded-lg"
             >
-              <table class="table-auto divide-y divide-gray-500">
+              <table class="divide-y divide-gray-500 table-auto">
                 <thead class="bg-gray-50">
                   <tr>
                     <th
                       scope="col"
-                      class="
-                        px-6
-                        py-3
-                        text-xs
-                        font-medium
-                        tracking-wider
-                        text-left text-gray-500
-                        uppercase
-                      "
+                      class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase "
                     >
                       month
                     </th>
                     <th
                       scope="col"
-                      class="
-                        px-6
-                        py-3
-                        text-xs
-                        font-medium
-                        tracking-wider
-                        text-left text-gray-500
-                        uppercase
-                      "
+                      class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase "
                     >
                       incoming
                     </th>
                     <th
                       scope="col"
-                      class="
-                        px-6
-                        py-3
-                        text-xs
-                        font-medium
-                        tracking-wider
-                        text-left text-gray-500
-                        uppercase
-                      "
+                      class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase "
                     >
                       outgoing
                     </th>
@@ -236,15 +160,7 @@
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <span
-                          class="
-                            inline-flex
-                            px-2
-                            text-xs
-                            font-semibold
-                            text-green-800
-                            bg-green-100
-                            rounded-full
-                          "
+                          class="inline-flex px-2 text-xs font-semibold text-green-800 bg-green-100 rounded-full "
                         >
                           &dollar;2700
                         </span>
@@ -253,16 +169,7 @@
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <span
-                          class="
-                            inline-flex
-                            px-2
-                            text-xs
-                            font-semibold
-                            leading-5
-                            text-red-800
-                            bg-red-100
-                            rounded-full
-                          "
+                          class="inline-flex px-2 text-xs font-semibold leading-5 text-red-800 bg-red-100 rounded-full "
                         >
                           &dollar;2100
                         </span>
@@ -281,15 +188,7 @@
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <span
-                          class="
-                            inline-flex
-                            px-2
-                            text-xs
-                            font-semibold
-                            text-green-800
-                            bg-green-100
-                            rounded-full
-                          "
+                          class="inline-flex px-2 text-xs font-semibold text-green-800 bg-green-100 rounded-full "
                         >
                           &dollar;2700
                         </span>
@@ -298,16 +197,7 @@
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <span
-                          class="
-                            inline-flex
-                            px-2
-                            text-xs
-                            font-semibold
-                            leading-5
-                            text-red-800
-                            bg-red-100
-                            rounded-full
-                          "
+                          class="inline-flex px-2 text-xs font-semibold leading-5 text-red-800 bg-red-100 rounded-full "
                         >
                           &dollar;2100
                         </span>
@@ -325,15 +215,7 @@
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <span
-                          class="
-                            inline-flex
-                            px-2
-                            text-xs
-                            font-semibold
-                            text-green-800
-                            bg-green-100
-                            rounded-full
-                          "
+                          class="inline-flex px-2 text-xs font-semibold text-green-800 bg-green-100 rounded-full "
                         >
                           &dollar;2700
                         </span>
@@ -342,16 +224,7 @@
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <span
-                          class="
-                            inline-flex
-                            px-2
-                            text-xs
-                            font-semibold
-                            leading-5
-                            text-red-800
-                            bg-red-100
-                            rounded-full
-                          "
+                          class="inline-flex px-2 text-xs font-semibold leading-5 text-red-800 bg-red-100 rounded-full "
                         >
                           &dollar;2100
                         </span>
@@ -369,15 +242,7 @@
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <span
-                          class="
-                            inline-flex
-                            px-2
-                            text-xs
-                            font-semibold
-                            text-green-800
-                            bg-green-100
-                            rounded-full
-                          "
+                          class="inline-flex px-2 text-xs font-semibold text-green-800 bg-green-100 rounded-full "
                         >
                           &dollar;2700
                         </span>
@@ -386,16 +251,7 @@
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <span
-                          class="
-                            inline-flex
-                            px-2
-                            text-xs
-                            font-semibold
-                            leading-5
-                            text-red-800
-                            bg-red-100
-                            rounded-full
-                          "
+                          class="inline-flex px-2 text-xs font-semibold leading-5 text-red-800 bg-red-100 rounded-full "
                         >
                           &dollar;2100
                         </span>
@@ -413,15 +269,7 @@
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <span
-                          class="
-                            inline-flex
-                            px-2
-                            text-xs
-                            font-semibold
-                            text-green-800
-                            bg-green-100
-                            rounded-full
-                          "
+                          class="inline-flex px-2 text-xs font-semibold text-green-800 bg-green-100 rounded-full "
                         >
                           &dollar;2700
                         </span>
@@ -430,16 +278,7 @@
                     <td class="px-6 py-4 whitespace-nowrap">
                       <div class="flex items-center">
                         <span
-                          class="
-                            inline-flex
-                            px-2
-                            text-xs
-                            font-semibold
-                            leading-5
-                            text-red-800
-                            bg-red-100
-                            rounded-full
-                          "
+                          class="inline-flex px-2 text-xs font-semibold leading-5 text-red-800 bg-red-100 rounded-full "
                         >
                           &dollar;2100
                         </span>

@@ -8,22 +8,15 @@
     <link rel="stylesheet" href="/tailwind.css" />
   </head>
   <body>
-    <nav class="bg-green-800">
+    <header class="h-16"></header>
+    <nav class="fixed inset-x-0 top-0 z-50 h-16 bg-green-800">
       <div class="mx-auto max-w-7xl">
         <div class="flex justify-between">
           <!-- logo -->
           <div>
             <a
               href="./budgets.html"
-              class="
-                flex
-                items-center
-                px-2
-                py-3
-                text-yellow-300
-                hover:text-yellow-500
-                focus:bg-green-600
-              "
+              class="flex items-center px-2 py-3 text-yellow-300  hover:text-yellow-500 focus:bg-green-600"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -48,50 +41,24 @@
           <div class="items-center hidden space-x-1 uppercase md:flex">
             <a
               href="./budgets.html"
-              class="
-                px-3
-                py-5
-                text-yellow-300
-                hover:text-yellow-500
-                focus:bg-green-600
-              "
+              class="px-3 py-5 text-yellow-300  hover:text-yellow-500 focus:bg-green-600"
               >budgets</a
             >
             <a
               href="#"
-              class="
-                px-3
-                py-5
-                text-yellow-300
-                hover:text-yellow-500
-                focus:bg-green-600
-              "
+              class="px-3 py-5 text-yellow-300  hover:text-yellow-500 focus:bg-green-600"
               >about</a
             >
             <a
               href="#"
-              class="
-                px-3
-                py-5
-                text-yellow-300
-                hover:text-yellow-500
-                focus:bg-green-600
-              "
+              class="px-3 py-5 text-yellow-300  hover:text-yellow-500 focus:bg-green-600"
               >contact</a
             >
           </div>
 
           <!-- mobile navigation button-->
           <div
-            class="
-              flex
-              px-3
-              py-5
-              text-yellow-300
-              md:hidden
-              item-center
-              hover:text-yellow-500
-            "
+            class="flex px-3 py-5 text-yellow-300  md:hidden item-center hover:text-yellow-500"
           >
             <button class="mobile-nav-btn">
               <svg
@@ -112,14 +79,7 @@
       </div>
       <!-- mobile navigation  -->
       <div
-        class="
-          flex flex-col
-          hidden
-          text-center
-          bg-green-700
-          mobile-nav
-          md:hidden
-        "
+        class="flex flex-col hidden text-center bg-green-700  mobile-nav md:hidden"
       >
         <a
           href="./budgets.html"
@@ -140,21 +100,15 @@
       <h1 class="mt-6 text-3xl font-extrabold text-center text-gray-800">
         New Budget
       </h1>
-      <div class="mt-8 mx-auto w-9/12">
-        <div class="py-8 px-6 shadow rounded-lg sm:px-10">
+      <div class="w-9/12 mx-auto mt-8">
+        <div class="px-6 py-8 rounded-lg shadow sm:px-10">
           <form class="space-y-6" method="post">
-            <h3 class="text-center text-xl font-extrabold">
+            <h3 class="text-xl font-extrabold text-center">
               Choose Month and Pay Frequency
             </h3>
 
             <div
-              class="
-                flex flex-col
-                md:flex-row
-                mx-auto
-                justify-around
-                items-center
-              "
+              class="flex flex-col items-center justify-around mx-auto  md:flex-row"
             >
               <div class="">
                 <label for="month" class="text-sm font-medium text-gray-700"
@@ -164,19 +118,7 @@
                   <select
                     name="month"
                     id="month"
-                    class="
-                      w-full
-                      border border-green-600
-                      px-3
-                      py-2
-                      rounded-lg
-                      shadow-sm
-                      focus:outline-none
-                      focus:border-green-700
-                      focus:ring-1
-                      focus:ring-green-700
-                      bg-white
-                    "
+                    class="w-full px-3 py-2 bg-white border border-green-600 rounded-lg shadow-sm  focus:outline-none focus:border-green-700 focus:ring-1 focus:ring-green-700"
                   >
                     <option value="">Please select</option>
                     <option value="jan">January</option>
@@ -202,19 +144,7 @@
                   <select
                     name="frequency"
                     id="frequency"
-                    class="
-                      w-full
-                      border border-green-600
-                      px-3
-                      py-2
-                      rounded-lg
-                      shadow-sm
-                      focus:outline-none
-                      focus:border-green-700
-                      focus:ring-1
-                      focus:ring-green-700
-                      bg-white
-                    "
+                    class="w-full px-3 py-2 bg-white border border-green-600 rounded-lg shadow-sm  focus:outline-none focus:border-green-700 focus:ring-1 focus:ring-green-700"
                   >
                     <option value="">Please select</option>
                     <option value="weekly">Weekly</option>
@@ -227,18 +157,12 @@
           </form>
         </div>
       </div>
-      <div class="mt-8 mx-auto w-3/4">
-        <div class="py-8 px-6 shadow rounded-lg sm:px-10">
+      <div class="w-3/4 mx-auto mt-8">
+        <div class="px-6 py-8 rounded-lg shadow sm:px-10">
           <form class="space-y-6" method="post">
-            <h3 class="text-center text-xl font-extrabold">Paycheck Amounts</h3>
+            <h3 class="text-xl font-extrabold text-center">Paycheck Amounts</h3>
             <div
-              class="
-                flex flex-col
-                md:flex-row
-                mx-auto
-                justify-around
-                items-center
-              "
+              class="flex flex-col items-center justify-around mx-auto  md:flex-row"
             >
               <div class="">
                 <label for="p1" class="block text-sm font-medium text-gray-700"
@@ -249,19 +173,7 @@
                     type="text"
                     name="p1"
                     id="p2"
-                    class="
-                      w-full
-                      border border-green-600
-                      px-3
-                      py-2
-                      rounded-lg
-                      shadow-sm
-                      focus:outline-none
-                      focus:border-green-700
-                      focus:ring-1
-                      focus:ring-green-700
-                      bg-white
-                    "
+                    class="w-full px-3 py-2 bg-white border border-green-600 rounded-lg shadow-sm  focus:outline-none focus:border-green-700 focus:ring-1 focus:ring-green-700"
                     placeholder="$1250.45"
                   />
                 </div>
@@ -275,19 +187,7 @@
                     type="text"
                     name="p2"
                     id="p2"
-                    class="
-                      w-full
-                      border border-green-600
-                      px-3
-                      py-2
-                      rounded-lg
-                      shadow-sm
-                      focus:outline-none
-                      focus:border-green-700
-                      focus:ring-1
-                      focus:ring-green-700
-                      bg-white
-                    "
+                    class="w-full px-3 py-2 bg-white border border-green-600 rounded-lg shadow-sm  focus:outline-none focus:border-green-700 focus:ring-1 focus:ring-green-700"
                     placeholder="$1250.45"
                   />
                 </div>
@@ -296,21 +196,15 @@
           </form>
         </div>
       </div>
-      <div class="mt-8 mx-auto w-3/4">
-        <div class="py-8 px-6 shadow rounded-lg sm:px-10">
+      <div class="w-3/4 mx-auto mt-8">
+        <div class="px-6 py-8 rounded-lg shadow sm:px-10">
           <form
-            class="space-y-6 flex flex-col justify-around items-center ml-4"
+            class="flex flex-col items-center justify-around ml-4 space-y-6"
             method="post"
           >
-            <h3 class="text-center text-xl font-extrabold">Monthly Expenses</h3>
+            <h3 class="text-xl font-extrabold text-center">Monthly Expenses</h3>
             <div
-              class="
-                flex flex-col
-                lg:flex-row
-                mx-auto
-                justify-around
-                items-center
-              "
+              class="flex flex-col items-center justify-around mx-auto  lg:flex-row"
             >
               <div class="max-w-md">
                 <label
@@ -323,19 +217,7 @@
                     type="text"
                     name="eName"
                     id="eName"
-                    class="
-                      w-full
-                      border border-green-600
-                      px-3
-                      py-2
-                      rounded-lg
-                      shadow-sm
-                      focus:outline-none
-                      focus:border-green-700
-                      focus:ring-1
-                      focus:ring-green-700
-                      bg-white
-                    "
+                    class="w-full px-3 py-2 bg-white border border-green-600 rounded-lg shadow-sm  focus:outline-none focus:border-green-700 focus:ring-1 focus:ring-green-700"
                     placeholder="House Payment"
                   />
                 </div>
@@ -351,19 +233,7 @@
                     type="text"
                     name="eAmount"
                     id="eAmount"
-                    class="
-                      w-full
-                      border border-green-600
-                      px-3
-                      py-2
-                      rounded-lg
-                      shadow-sm
-                      focus:outline-none
-                      focus:border-green-700
-                      focus:ring-1
-                      focus:ring-green-700
-                      bg-white
-                    "
+                    class="w-full px-3 py-2 bg-white border border-green-600 rounded-lg shadow-sm  focus:outline-none focus:border-green-700 focus:ring-1 focus:ring-green-700"
                     placeholder="$560"
                   />
                 </div>
@@ -379,20 +249,7 @@
                     type="number"
                     name="p2"
                     id="p2"
-                    class="
-                      text-center
-                      w-full
-                      border border-green-600
-                      px-3
-                      py-2
-                      rounded-lg
-                      shadow-sm
-                      focus:outline-none
-                      focus:border-green-700
-                      focus:ring-1
-                      focus:ring-green-700
-                      bg-white
-                    "
+                    class="w-full px-3 py-2 text-center bg-white border border-green-600 rounded-lg shadow-sm  focus:outline-none focus:border-green-700 focus:ring-1 focus:ring-green-700"
                   >
                     <option value="">Select</option>
                     <option value="one">1</option>
@@ -404,69 +261,31 @@
               </div>
             </div>
             <button
-              class="
-                mt-4
-                text-center text-white
-                border border-green-600
-                px-3
-                py-2
-                rounded-lg
-                shadow-sm
-                focus:outline-none
-                focus:border-green-700
-                focus:ring-1
-                focus:ring-green-700
-                bg-green-700
-                hover:bg-green-500
-              "
+              class="px-3 py-2 mt-4 text-center text-white bg-green-700 border border-green-600 rounded-lg shadow-sm  focus:outline-none focus:border-green-700 focus:ring-1 focus:ring-green-700 hover:bg-green-500"
             >
               Add
             </button>
           </form>
         </div>
       </div>
-      <table class="expense-table table-auto mt-4 mx-auto">
+      <table class="mx-auto mt-4 table-auto expense-table">
         <thead class="bg-gray-50">
           <tr>
             <th
               scope="col"
-              class="
-                px-6
-                py-3
-                text-xs
-                font-medium
-                tracking-wider
-                text-left text-gray-500
-                uppercase
-              "
+              class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase "
             >
               name
             </th>
             <th
               scope="col"
-              class="
-                px-6
-                py-3
-                text-xs
-                font-medium
-                tracking-wider
-                text-left text-gray-500
-                uppercase
-              "
+              class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase "
             >
               amount
             </th>
             <th
               scope="col"
-              class="
-                px-6
-                py-3
-                text-xs
-                font-medium
-                tracking-wider
-                text-left text-gray-500
-                uppercase
-              "
+              class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase "
             >
               paycheck
             </th>
@@ -484,16 +303,7 @@
             <td class="px-6 py-4 whitespace-nowrap">
               <div class="flex items-center">
                 <span
-                  class="
-                    inline-flex
-                    px-2
-                    text-xs
-                    font-semibold
-                    leading-5
-                    text-red-800
-                    bg-red-100
-                    rounded-full
-                  "
+                  class="inline-flex px-2 text-xs font-semibold leading-5 text-red-800 bg-red-100 rounded-full "
                 >
                   &dollar;2100
                 </span>
@@ -510,22 +320,7 @@
 
       <button
         type="submit"
-        class="
-          mt-4
-          mx-auto
-          text-center text-white
-          border border-green-600
-          px-3
-          py-2
-          rounded-lg
-          shadow-sm
-          focus:outline-none
-          focus:border-green-700
-          focus:ring-1
-          focus:ring-green-700
-          bg-green-700
-          hover:bg-green-500
-        "
+        class="px-3 py-2 mx-auto mt-4 text-center text-white bg-green-700 border border-green-600 rounded-lg shadow-sm  focus:outline-none focus:border-green-700 focus:ring-1 focus:ring-green-700 hover:bg-green-500"
       >
         Submit
       </button>
