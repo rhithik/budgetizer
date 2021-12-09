@@ -136,28 +136,36 @@
     </nav>
 
     <!-- main content -->
-    <div class="flex flex-col justify-center">
+    <div class="flex flex-col justify-center max-w-5xl mx-auto">
       <h1 class="mt-6 text-3xl font-extrabold text-center text-gray-800">
         New Budget
       </h1>
-      <div class="mt-8 mx-auto w-3/4">
+      <div class="mt-8 mx-auto w-9/12">
         <div class="py-8 px-6 shadow rounded-lg sm:px-10">
           <form class="space-y-6" method="post">
             <h3 class="text-center text-xl font-extrabold">
               Choose Month and Pay Frequency
             </h3>
-            <div class="flex">
-              <div>
-                <label
-                  for="month"
-                  class="block text-sm font-medium text-gray-700"
-                  >Month</label
-                >
-                <div>
+
+            <div
+              class="
+                flex flex-col
+                md:flex-row
+                mx-auto
+                justify-around
+                items-center
+              "
+            >
+              <div class="">
+                <label for="month" class="text-sm font-medium text-gray-700"
+                  >Month
+                </label>
+                <div class="mt-1">
                   <select
                     name="month"
                     id="month"
                     class="
+                      w-full
                       border border-green-600
                       px-3
                       py-2
@@ -186,35 +194,34 @@
                   </select>
                 </div>
               </div>
-            </div>
-            <div>
-              <label
-                for="frequency"
-                class="block text-sm font-medium text-gray-700"
-                >Pay frequency</label
-              >
-              <div class="mt-1">
-                <select
-                  name="frequency"
-                  id="frequency"
-                  class="
-                    border border-green-600
-                    px-3
-                    py-2
-                    rounded-lg
-                    shadow-sm
-                    focus:outline-none
-                    focus:border-green-700
-                    focus:ring-1
-                    focus:ring-green-700
-                    bg-white
-                  "
+              <div class="">
+                <label for="frequency" class="text-sm font-medium text-gray-700"
+                  >Pay frequency</label
                 >
-                  <option value="">Please select</option>
-                  <option value="weekly">Weekly</option>
-                  <option value="bi-weekly">Bi-Weekly</option>
-                  <option value="monthly">Monthly</option>
-                </select>
+                <div class="mt-1">
+                  <select
+                    name="frequency"
+                    id="frequency"
+                    class="
+                      w-full
+                      border border-green-600
+                      px-3
+                      py-2
+                      rounded-lg
+                      shadow-sm
+                      focus:outline-none
+                      focus:border-green-700
+                      focus:ring-1
+                      focus:ring-green-700
+                      bg-white
+                    "
+                  >
+                    <option value="">Please select</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="bi-weekly">Bi-Weekly</option>
+                    <option value="monthly">Monthly</option>
+                  </select>
+                </div>
               </div>
             </div>
           </form>
@@ -224,54 +231,66 @@
         <div class="py-8 px-6 shadow rounded-lg sm:px-10">
           <form class="space-y-6" method="post">
             <h3 class="text-center text-xl font-extrabold">Paycheck Amounts</h3>
-            <div>
-              <label for="p1" class="block text-sm font-medium text-gray-700"
-                >Paycheck #1</label
-              >
-              <div class="mt-1">
-                <input
-                  type="number"
-                  name="p1"
-                  id="p2"
-                  class="
-                    w-full
-                    border border-green-600
-                    px-3
-                    py-2
-                    rounded-lg
-                    shadow-sm
-                    focus:outline-none
-                    focus:border-green-700
-                    focus:ring-1
-                    focus:ring-green-700
-                    bg-white
-                  "
-                />
+            <div
+              class="
+                flex flex-col
+                md:flex-row
+                mx-auto
+                justify-around
+                items-center
+              "
+            >
+              <div class="">
+                <label for="p1" class="block text-sm font-medium text-gray-700"
+                  >Paycheck #1</label
+                >
+                <div class="mt-1">
+                  <input
+                    type="text"
+                    name="p1"
+                    id="p2"
+                    class="
+                      w-full
+                      border border-green-600
+                      px-3
+                      py-2
+                      rounded-lg
+                      shadow-sm
+                      focus:outline-none
+                      focus:border-green-700
+                      focus:ring-1
+                      focus:ring-green-700
+                      bg-white
+                    "
+                    placeholder="$1250.45"
+                  />
+                </div>
               </div>
-            </div>
-            <div>
-              <label for="p2" class="block text-sm font-medium text-gray-700"
-                >Paycheck #2</label
-              >
-              <div class="mt-1">
-                <input
-                  type="number"
-                  name="p2"
-                  id="p2"
-                  class="
-                    w-full
-                    border border-green-600
-                    px-3
-                    py-2
-                    rounded-lg
-                    shadow-sm
-                    focus:outline-none
-                    focus:border-green-700
-                    focus:ring-1
-                    focus:ring-green-700
-                    bg-white
-                  "
-                />
+              <div class="">
+                <label for="p2" class="block text-sm font-medium text-gray-700"
+                  >Paycheck #2</label
+                >
+                <div class="mt-1">
+                  <input
+                    type="text"
+                    name="p2"
+                    id="p2"
+                    class="
+                      w-full
+                      border border-green-600
+                      px-3
+                      py-2
+                      rounded-lg
+                      shadow-sm
+                      focus:outline-none
+                      focus:border-green-700
+                      focus:ring-1
+                      focus:ring-green-700
+                      bg-white
+                    "
+                    placeholder="$1250.45"
+                  />
+                </div>
               </div>
             </div>
           </form>
@@ -279,10 +298,21 @@
       </div>
       <div class="mt-8 mx-auto w-3/4">
         <div class="py-8 px-6 shadow rounded-lg sm:px-10">
-          <form class="space-y-6" method="post">
+          <form
+            class="space-y-6 flex flex-col justify-around items-center ml-4"
+            method="post"
+          >
             <h3 class="text-center text-xl font-extrabold">Monthly Expenses</h3>
-            <div class="flex justify-around">
-              <div>
+            <div
+              class="
+                flex flex-col
+                lg:flex-row
+                mx-auto
+                justify-around
+                items-center
+              "
+            >
+              <div class="max-w-md">
                 <label
                   for="eName"
                   class="block text-sm font-medium text-gray-700"
@@ -306,10 +336,11 @@
                       focus:ring-green-700
                       bg-white
                     "
+                    placeholder="House Payment"
                   />
                 </div>
               </div>
-              <div>
+              <div class="">
                 <label
                   for="eAmount"
                   class="block text-sm font-medium text-gray-700"
@@ -317,7 +348,7 @@
                 >
                 <div class="mt-1">
                   <input
-                    type="number"
+                    type="text"
                     name="eAmount"
                     id="eAmount"
                     class="
@@ -333,10 +364,11 @@
                       focus:ring-green-700
                       bg-white
                     "
+                    placeholder="$560"
                   />
                 </div>
               </div>
-              <div>
+              <div class="">
                 <label
                   for="ePay"
                   class="block text-sm font-medium text-gray-700"
@@ -348,6 +380,7 @@
                     name="p2"
                     id="p2"
                     class="
+                      text-center
                       w-full
                       border border-green-600
                       px-3
@@ -361,6 +394,7 @@
                       bg-white
                     "
                   >
+                    <option value="">Select</option>
                     <option value="one">1</option>
                     <option value="two">2</option>
                     <option value="three">3</option>
@@ -369,9 +403,133 @@
                 </div>
               </div>
             </div>
+            <button
+              class="
+                mt-4
+                text-center text-white
+                border border-green-600
+                px-3
+                py-2
+                rounded-lg
+                shadow-sm
+                focus:outline-none
+                focus:border-green-700
+                focus:ring-1
+                focus:ring-green-700
+                bg-green-700
+                hover:bg-green-500
+              "
+            >
+              Add
+            </button>
           </form>
         </div>
       </div>
+      <table class="expense-table table-auto mt-4 mx-auto">
+        <thead class="bg-gray-50">
+          <tr>
+            <th
+              scope="col"
+              class="
+                px-6
+                py-3
+                text-xs
+                font-medium
+                tracking-wider
+                text-left text-gray-500
+                uppercase
+              "
+            >
+              name
+            </th>
+            <th
+              scope="col"
+              class="
+                px-6
+                py-3
+                text-xs
+                font-medium
+                tracking-wider
+                text-left text-gray-500
+                uppercase
+              "
+            >
+              amount
+            </th>
+            <th
+              scope="col"
+              class="
+                px-6
+                py-3
+                text-xs
+                font-medium
+                tracking-wider
+                text-left text-gray-500
+                uppercase
+              "
+            >
+              paycheck
+            </th>
+          </tr>
+        </thead>
+        <tbody class="bg-white divide-y divide-gray-300">
+          <tr>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <div class="flex items-center">
+                <div class="text-sm font-medium text-gray-900">
+                  <a href="#">January 2022</a>
+                </div>
+              </div>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <div class="flex items-center">
+                <span
+                  class="
+                    inline-flex
+                    px-2
+                    text-xs
+                    font-semibold
+                    leading-5
+                    text-red-800
+                    bg-red-100
+                    rounded-full
+                  "
+                >
+                  &dollar;2100
+                </span>
+              </div>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <div class="flex items-center">
+                <p>1</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button
+        type="submit"
+        class="
+          mt-4
+          mx-auto
+          text-center text-white
+          border border-green-600
+          px-3
+          py-2
+          rounded-lg
+          shadow-sm
+          focus:outline-none
+          focus:border-green-700
+          focus:ring-1
+          focus:ring-green-700
+          bg-green-700
+          hover:bg-green-500
+        "
+      >
+        Submit
+      </button>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
